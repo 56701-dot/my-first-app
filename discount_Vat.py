@@ -6,7 +6,7 @@ discountprice = price * (discountpercent//100)
 vat = discountprice * 0.07
 net_price = (price-discountprice)+vat
 st.header(f"• ราคาสินค้า: {price:.2f} บาท")
-st.header(f"• เปอร์เซนส่วนลด: {discountpercent:.2f} บาท")
+st.header(f"• เปอร์เซนส่วนลด: {discountpercent:.2f} %")
 st.header(f"• ส่วนลด: {discountprice:.2f} บาท")
 st.header(f"• ภาษีมูลค่าเพิ่ม (VAT 7%): **{vat:.2f}** บาท")
 st.header(f"• ราคาสุทธิ: {net_price:.2f} บาท")
