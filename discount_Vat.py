@@ -3,7 +3,7 @@ st.title("🛒แอปพลิเคชั่นคำนวณราคาส
 price = st.number_input("กรอกราคาสินค้า (บาท):", min_value=0.0 , value=0.0)
 discountpercent = st.number_input("กรอกเปอร์เซนต์ส่วนลด :", min_value=0.0 , value=0.0)
 discountprice = price * (discountpercent//100)
-vat = price * 0.07
+vat = discountprice * 0.07
 net_price = (price-discountprice)+vat
 st.header(f"• ราคาสินค้า: {price:.2f} บาท")
 st.header(f"• เปอร์เซนส่วนลด: {discountpercent:.2f} บาท")
